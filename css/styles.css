@@ -13,6 +13,9 @@ body{ margin: 0;
   font-style: normal;
   font-weight: 400; }
 ul { list-style: none;}
+.header {
+  max-height: 80px;
+}
 .logo-span { color:var(--logo-span-color) }
 .logo { font-family: 'Raleway';
   font-weight: 700;
@@ -20,15 +23,25 @@ ul { list-style: none;}
   line-height: 31px;
   color:black;
   text-decoration: none;
-  letter-spacing: 0.03em;}
+  letter-spacing: 0.03em;
+  display: inline-block;
+}
+.site-list {
+  display: flex;
+}
+.auth-list { 
+  display: flex;
+}
 .navigation { 
+  color: var(--text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  color: var(--text-color);
     }
-.site-nav { color: var(--text-color);
+.site-nav { 
+
+  color: var(--text-color);
   font-weight: 500;
   text-decoration: none;
   font-size: 14px;
@@ -42,7 +55,14 @@ ul { list-style: none;}
 .site-nav:focus {
   color:#2196F3
 }
+.site-nav {
+display: inline-block;
+padding-top: 32px;
+padding-bottom: 32px;
+}
+
 .phone { 
+  
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
@@ -56,7 +76,11 @@ ul { list-style: none;}
 .phone:focus {
   color: #2196F3;
 }
-
+.header-nav {
+  display: flex ;
+  align-items: center ;
+  justify-content: space-between ;
+}
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -75,7 +99,11 @@ ul { list-style: none;}
 .hero-section {
   text-align: center ;
  padding: 200px 0 280px ;
- background-image: url('/images/background-image.jpg');
+ background-image: url('../images/background-image.jpg');
+ max-height: 600px;
+ background-repeat: no-repeat ;
+ background-size: cover ;
+ background-position: center ;
 }
 .title-button {
   font-family: 'Roboto';
@@ -123,12 +151,14 @@ ul { list-style: none;}
     clip: rect(0 0 0 0); 
     overflow: hidden; 
   } 
-  .second-section {
+  .section {
     padding: 94px 215px;
     text-align: center;
-  }
-  .second-list {
     
+  }
+  .feature-item {
+    display: inline-block;
+    margin-right: 30px;
   }
 .item-list {
   font-size: 14px;
@@ -224,14 +254,12 @@ ul { list-style: none;}
   color: var(--p-color);
 }
 .container {
-  width: 1200px;
+  max-width: 1200px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
-.list {  padding: 0;
-  margin: 0;
-  list-style: none ;
-}
+
 
