@@ -98,6 +98,9 @@ padding-bottom: 32px; }
 .header-container {
   display: flex;
   align-items: center;
+  
+}
+.header {
   border-bottom: 1px solid #ECECEC;
 }
 .header-nav {
