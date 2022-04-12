@@ -165,7 +165,7 @@ padding-bottom: 32px; }
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color);
-  padding-bottom:50px;
+  margin-bottom:50px;
   }
   .visually-hidden { 
     position: absolute; 
@@ -181,8 +181,6 @@ padding-bottom: 32px; }
   } 
 .feature-list {
     display: flex ;
-    padding-bottom: 94px;
-    padding-top: 94px;
   }
 .feature-item {
     display: flex;
@@ -194,7 +192,6 @@ padding-bottom: 32px; }
   }
   .img-list {
     display: flex;
-    margin-bottom: 94px ;
   }
   .photo-list:not(:last-child) {
     margin-right: 30px;
@@ -210,6 +207,13 @@ padding-bottom: 32px; }
 }
 .box-aside:not(:last-child){
   margin-right: 30px;
+}
+.vissually-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.work-section {
+  padding-bottom: 94px;
 }
 .aside-container {
   background-color: #F5F4FA;
