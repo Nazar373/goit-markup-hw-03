@@ -64,10 +64,7 @@ p,span,h1,h2,h3,h4,h5,h6 {
   }
 .site-nav.current { color: #2196F3; }
 .site-nav:hover {
-  color:#757575;
-}
-.site-nav:focus {
-  color:#2196F3
+  color: var(--logo-span-color)
 }
 .site-nav {
 display: inline-block;
@@ -90,10 +87,7 @@ padding-bottom: 32px; }
   width: 135px;
 }
 .phone:hover {
-  color:#2F303A
-}
-.phone:focus {
-  color: #2196F3;
+  color:var(--logo-span-color)
 }
 .header-container {
   display: flex;
